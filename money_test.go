@@ -7,13 +7,12 @@ import (
 )
 
 func TestAdd(t *testing.T){
-	var a Munit =45896210
-	var b Munit = 456789123
-	var c Munit = 78946123
+
+	var a,b,c Munit = 45896210,456789123,789461244567123453
 
 	ma:=New(a,"CNY")
 	mb:=New(b,"CNY")
-	mc:=New(c,"AED")
+	mc:=New(c,"BTC")
 
 	fmt.Println("//////////////////////////////////////////////////////////////")
 	fmt.Println("Munit相加")
@@ -21,6 +20,7 @@ func TestAdd(t *testing.T){
 	if err != nil {
 		fmt.Println(err.Error())
 	}else {
+		fmt.Println(ab)
 		fmt.Printf("%d加%d等于%d\n",int64(a),int64(b),int64(ab))
 	}
 
