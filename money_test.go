@@ -6,8 +6,6 @@ import (
 
 )
 
-
-
 func TestAdd(t *testing.T){
 	var a Munit =45896210
 	var b Munit = 456789123
